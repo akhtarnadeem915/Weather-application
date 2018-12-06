@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> weather app </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" /> 
+	</head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"> </script>
+	<script src="script.js"> </script>
+	<body class="is-preload" >
+			<div id="wrapper" class="divided">
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1> Weather app </h1>
+							<h3> enter city name to check weather </h3>
+							<p class="major">
+							 	<input type="text"  id="cityname" placeholder="enter city name!" required>
+    						</p>
+							 <button onclick="weather()"> Check Weather!.. </button> 
+							<!-- <button id="clearbutton" onclick="clear()"> Clear! </button> -->
+							 <!-- weather output via api -->
+							<div id="clear" class="weather-container"> 
+    							<img class="icon">
+    							<p class="weather"> </p>
+    							<p class="temp"> </p>
+ 							</div>
+
+						</div>
+						<div class="image">
+							<img src="weather.jpg" alt="not found" />
+						</div>
+					</section>				
+			</div>
+		<footer> 
+			<p>  Made by Nadeem Akhtar </p>
+		</footer>
+	</body>
+</html>
